@@ -1,0 +1,51 @@
+---
+import LinkedInIcon from "./Icons/LinkedIn.astro";
+import MailIcon from "./Icons/Mail.astro";
+
+const MiembrosEquipo = [
+    {
+        name: "Dany Reyes",
+        role: "Socio Principal",
+        email: "darrr1970@gmail.com",
+        linkedin: "https://pe.linkedin.com/in/dany-reyes-reyes-641a401a7",
+        photo: "/images/MiembrosDelEquipo/Dany2.png"
+    },
+    {
+        name: "Daniel Reyes",
+        role: "Socio",
+        email: "dreyesg@outlook.es",
+        linkedin: "https://pe.linkedin.com/in/daniel-reyes-422026134",
+        photo: "/images/MiembrosDelEquipo/Daniel.png"
+    },
+    {
+        name: "Wendy Morales",
+        role: "Asociada principal",
+        email: "wmmorales98@gmail.com",
+        linkedin: "https://pe.linkedin.com/in/wendy-morales-557a13174",
+        photo: "/images/MiembrosDelEquipo/Wendy.png"
+    }
+
+]
+---
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {MiembrosEquipo.map(({ photo, name, role, email, linkedin }) => (
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm border border-gray-800 w-full ">
+            <img src={photo} alt={`${name}'s photo`} class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-center text-4xl font-bold mb-2">{name}</h2>
+                <p class="text-center text-2xl text-[#fc2121] font-semibold mb-2">{role}</p>
+                <p class="flex justify-center mb-2 text-xl">  <MailIcon class="size-6 mr-2" /> {email}</p>
+                <div class="flex justify-center mt-4">
+                    <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                        <LinkedInIcon class="size-8"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    ))}
+</div>
+
+
+
+
+

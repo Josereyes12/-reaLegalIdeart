@@ -1,0 +1,28 @@
+---
+const AREAS_DE_PRACTICA = [
+  {
+    name: "Derecho Administrativo",
+    image: "/images/AreasDePractica/administrativo.png",
+  },
+  {
+    name: "Derecho Civil",
+    image: "/images/AreasDePractica/civil.png",
+  },
+  {
+    name: "Derecho Inmobiliario",
+    image: "/images/AreasDePractica/inmobiliario.png",
+  },
+];
+---
+<div class="py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {AREAS_DE_PRACTICA.map(({ name, image }) => (
+            <div class="flex flex-col items-center ">
+            <img src={image} alt={`Imagen de ${name}`} class="size-16 object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">{name}</h3>
+                </div>
+            </div>
+        ))}
+    </div>
+</div>

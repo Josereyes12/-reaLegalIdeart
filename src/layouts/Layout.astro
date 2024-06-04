@@ -1,0 +1,52 @@
+---
+import '@fontsource/libre-caslon-display'
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="images/LogoIdeart.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header/>
+		<slot />
+		<Footer/>
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: white;
+	}
+	html {
+		font-family: "Libre Caslon Display", serif;
+		scroll-behavior: smooth;
+	}
+
+	body{
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		width: 100%;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html{
+			scroll-behavior: auto
+		}
+	}
+</style>

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CartasE from '../components/CartasE.astro';
+import AreasDP from '../components/AreasDP.astro';
+---
+
+<Layout 
+title="Área Legal Ideart Asesores"
+description= "Descubre los servicios legales expertos del área legal de Ideart Asesores. Nuestro equipo de abogados experimentados ofrece asesoría jurídica en derecho corporativo, laboral, fiscal y más. Confíe en nosotros para proteger sus intereses legales.">
+	<main class="px-4 mx-auto max-w-8xl">
+
+	 <section class="py-12 flex flex-col items-center">
+
+		<h2 class="text-7xl text-blue-800 font-semibold text-center mb-8 ">Nuestro Equipo</h2>
+
+		 <CartasE/>
+	 </section>
+
+	<section class="py-12 ">
+		
+			<div class="container mx-auto px-8">
+			<h2 class="text-5xl text-blue-800 md:text-6xl lg:text-7xl font-semibold text-center"> ÁREAS DE PRÁCTICA </h2>
+			</div>
+		
+
+	 <AreasDP  />
+	</section>
+
+	</main>
+</Layout>
+
