@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Área legal Ideart Asesores
 ![image](https://github.com/Josereyes12/AreaLegalIdeart/assets/77817226/12bd5cab-8fab-463c-a909-8de460288669)
 =======
+=======
+>>>>>>> e89459a2c24c449fc0e9d6cdaf774b0bd8f09f4b
 # Astro Starter Kit: Basics
 
 ```sh
@@ -56,4 +59,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<<<<<<< HEAD
 >>>>>>> e89459a (Versión 1)
+=======
+>>>>>>> e89459a2c24c449fc0e9d6cdaf774b0bd8f09f4b
