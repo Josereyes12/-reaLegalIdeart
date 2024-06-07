@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Descarga from '../../components/Icons/Descarga.astro';
+import Home from '../../components/Icons/Home.astro';
+---
+
+<Layout title="Dany Reyes - Socio Principal" description="Página personal de Dany Reyes">
+<main class="px-4 mx-auto max-w-7xl py-12">
+  <section class="container mx-auto px-4 py-8">
+    <div class="flex flex-col md:flex-row items-start gap-8">
+  
+      <div class="w-full md:w-1/3 flex-shrink-0 text-center">
+        <img src="/images/MiembrosDelEquipo/Dany2.png" alt="Dany Reyes" class="w-full shadow-lg mb-4 object-cover imagepeq mq1 ">
+        <div class="flex justificy-center mx-auto max-w-max mt-8">
+            <a href="../pdf/CVDany.pdf" class="bg-[#B30000] text-white px-4 py-2 rounded flex items-center">
+                Descargar CV <Descarga class="ml-2 "/>
+            </a>
+        </div>
+      </div>
+
+      <div class="text-left ml-12 bq2">
+        <h1 class="mb-8 text-5xl font-bold text-[#B30000]">Dany Reyes</h1>
+        <p class="text-2xl text-[#B30000] font-semibold mb-4">Socio Principal</p>
+        <p class="text-lg mb-2"><a href="mailto:darrr1970@gmail.com"> darrr1970@gmail.com</a></p>
+        <p class="text-lg mb-4">+51 930247355</p>
+
+        <h2 class="text-[#B30000] text-2xl font-bold mb-2 bq2">Áreas de Práctica</h2>
+        <p class="mb-4">Derecho Administrativo, Derecho Civil, Derecho Penal</p>
+
+        <p class="mb-6">Dany Reyes es un abogado colegiado con amplias capacidades en derecho penal, civil y administrativo. A lo largo de su carrera, ha demostrado un compromiso inquebrantable con el desarrollo de todo su potencial, utilizando sus habilidades, conocimientos y competencias personales para lograr los objetivos de las organizaciones y contribuir al crecimiento de la sociedad.
+
+Dany se destaca por su capacidad para trabajar en equipo y bajo presión, así como por su adaptabilidad a entornos complejos y cambiantes. Su experiencia en derecho penal, civil y administrativo le permite ofrecer un asesoramiento integral y eficiente a sus clientes, asegurando siempre los mejores resultados.</p>
+      </div>
+    </div>
+
+  <div class="mt-8 text-center bq2">
+      <section class="mb-8">
+        <h2 class="text-[#B30000] text-2xl font-bold mb-4 bq2">Formación Académica</h2>
+        <ul >
+          <li>Universidad Norbert Wiener, Lima 2022 - Abogado</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-[#B30000] text-2xl font-bold mb-4 bq2">Afiliaciones</h2>
+        <ul >
+          <li>Colegio de Abogados de Lima</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-[#B30000] text-2xl font-bold mb-4 bq2">Idiomas</h2>
+        <ul>
+          <li>Español</li>
+          <li>Inglés</li>
+        </ul>
+      </section>
+    </div>
+  </section>
+  <div class="flex justificy-center mx-auto max-w-max mt-5 ">
+        <a href="/" class="bg-[#D3BB36] text-white px-4 py-2 rounded flex items-center">Volver al Inicio  <Home class="ml-2 "/> </a> 
+  </div>
+</main>
+</Layout>
+
+<style>
+    @media (max-width: 1280px) {
+        .imagepeq {
+           margin-left: auto;
+           margin-right: auto;
+            height: 650px;
+            width: 550px;
+            
+        }
+    }
+
+    @media (max-width: 380px) {
+        .mq1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 280px;
+            
+        }
+    }
+
+     @media (max-width: 383px) {
+        .bq2 {
+            font-size: 1.1rem;
+            
+        }
+    }
+
+
+    
+</style>

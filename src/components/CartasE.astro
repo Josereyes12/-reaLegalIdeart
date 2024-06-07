@@ -1,6 +1,7 @@
 ---
 import LinkedInIcon from "./Icons/LinkedIn.astro";
 import MailIcon from "./Icons/Mail.astro";
+import FlechaD from "./Icons/FlechaD.astro";
 
 const MiembrosEquipo = [
     {
@@ -8,35 +9,38 @@ const MiembrosEquipo = [
         role: "Socio Principal",
         email: "darrr1970@gmail.com",
         linkedin: "https://pe.linkedin.com/in/dany-reyes-reyes-641a401a7",
-        photo: "/images/MiembrosDelEquipo/Dany2.png"
+        photo: "/images/MiembrosDelEquipo/Dany2.png",
+        page: "/team/Dany"
     },
     {
         name: "Daniel Reyes",
         role: "Socio",
         email: "dreyesg@outlook.es",
         linkedin: "https://pe.linkedin.com/in/daniel-reyes-422026134",
-        photo: "/images/MiembrosDelEquipo/Daniel.png"
+        photo: "/images/MiembrosDelEquipo/Daniel.png",
+        page: "/team/Daniel"
     },
     {
         name: "Wendy Morales",
         role: "Asociada principal",
         email: "wmmorales98@gmail.com",
         linkedin: "https://pe.linkedin.com/in/wendy-morales-557a13174",
-        photo: "/images/MiembrosDelEquipo/Wendy.png"
+        photo: "/images/MiembrosDelEquipo/Wendy.png",
+        page: "/team/Wendy"
     }
 
 ]
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {MiembrosEquipo.map(({ photo, name, role, email, linkedin }) => (
+    {MiembrosEquipo.map(({ photo, name, role, email, linkedin, page }) => (
         <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm border border-gray-800 w-full ">
-            <img src={photo} alt={`${name}'s photo`} class="w-full h-48 object-cover object-center">
-            <div class="p-6">
-                <h2 class="text-center text-4xl font-bold mb-2">{name}</h2>
+            <img src={photo} alt={`${name}'s photo`} class="w-full h-50 object-cover object-center">
+            <div class="p-6 card">
+                <h2 class="text-center text-3xl font-bold mb-2">{name}</h2>
                 <p class="text-center text-2xl text-[#fc2121] font-semibold mb-2">{role}</p>
                 <p class="flex justify-center mb-2 text-xl">  
-                    <a href={`mailto:${email}`} class="flex items-center">
+                    <a href={`mailto:${email}`} class="flex items-center modi2">
                         <MailIcon class="size-6 mr-2" /> {email}
                     </a>
                 </p>
@@ -45,11 +49,18 @@ const MiembrosEquipo = [
                         <LinkedInIcon class="size-8"/>
                     </a>
                 </div>
+                <div class="flex justify-center mt-4">
+                    <a href={page} class=" text-red-500 px-4 py-2  flex items-center">Ver más <FlechaD class="ml-2"/> </a>
+                </div>
             </div>
         </div>
     ))}
 </div>
 
-
-
-
+<style>
+    @media (max-width: 383px) {
+        .modi2{
+            font-size: 1.1rem;
+        }
+    }
+</style>

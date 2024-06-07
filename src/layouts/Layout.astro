@@ -1,5 +1,6 @@
 ---
 import '@fontsource/libre-caslon-display'
+import '@fontsource/libre-baskerville';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -21,7 +22,7 @@ const { description, title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="celp">
 		<Header/>
 		<slot />
 		<Footer/>
@@ -31,8 +32,14 @@ const { description, title } = Astro.props;
 	:root {
 		color-scheme: white;
 	}
+
+	@font-face {
+		font-family: 'Mirador Black';
+		src: url('./Mirador.otf') format('opentype');
+		}
 	html {
-		font-family: "Libre Caslon Display", serif;
+		
+		font-family: 'Libre Baskerville', serif;
 		scroll-behavior: smooth;
 	}
 
@@ -49,4 +56,18 @@ const { description, title } = Astro.props;
 			scroll-behavior: auto
 		}
 	}
+
+	
+	@media (max-width: 383px) {
+    .celp {
+        font-size: 1.4rem; 
+    }
+    .celp h1,
+
+    .celp p {
+        font-size: inherit; 
+    }
+    
+	}
+
 </style>

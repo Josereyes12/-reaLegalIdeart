@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Descarga from '../../components/Icons/Descarga.astro';
+import Home from '../../components/Icons/Home.astro';
+---
+
+<Layout title="Daniel Reyes - Socio" description="Página personal de Daniel Reyes">
+<main class="px-4 mx-auto max-w-7xl py-12">
+  <section class="container mx-auto px-4 py-8">
+    <div class="flex flex-col md:flex-row items-start gap-8">
+  
+      <div class="w-full md:w-1/3 flex-shrink-0 text-center">
+        <img src="/images/MiembrosDelEquipo/Daniel.png" alt="Daniel Reyes" class="w-full shadow-lg mb-4 object-cover imagepeq mq1 ">
+        <div class="flex justificy-center mx-auto max-w-max mt-8">
+            <a href="../pdf/CVDaniel.pdf" class="bg-[#B30000] text-white px-4 py-2 rounded flex items-center">
+                Descargar CV <Descarga class="ml-2 "/>
+            </a>
+        </div>
+      </div>
+
+      <div class="text-left ml-12 bq2">
+        <h1 class="mb-8 text-5xl font-bold text-[#B30000]">Daniel Reyes</h1>
+        <p class="text-2xl text-[#B30000] font-semibold mb-4">Socio</p>
+        <p class="text-lg mb-2"><a href="mailto:dreyesg@outlook.es"> dreyesg@outlook.es</a></p>
+        <p class="text-lg mb-4">+51 916709896</p>
+
+        <h2 class="text-[#B30000] text-2xl font-bold mb-2 bq2">Áreas de Práctica</h2>
+        <p class="mb-4">Derecho Bancario y Compliance Corporativo</p>
+
+        <p class="mb-6">Daniel Reyes es un abogado colegiado con amplios conocimientos en derecho bancario y compliance corporativo. Su experiencia abarca el cumplimiento normativo, la prevención del lavado de activos y financiamiento del terrorismo (PLAFT), así como la gestión antisoborno.
+
+A lo largo de su carrera, Daniel ha demostrado un compromiso constante con el desarrollo de su potencial, aplicando sus habilidades, conocimientos y competencias personales para alcanzar los objetivos organizacionales y contribuir al desarrollo de la sociedad.</p>
+      </div>
+    </div>
+
+  <div class="mt-8 text-center bq2">
+      <section class="mb-8">
+        <h2 class="text-[#B30000] text-2xl font-bold mb-4 bq2">Formación Académica</h2>
+        <ul >
+          <li>Universidad Inca Garcilaso de la Vega, Lima 2021 - Abogado</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-[#B30000] text-2xl font-bold mb-4 bq2">Afiliaciones</h2>
+        <ul >
+          <li>Colegio de Abogados de Lima</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-[#B30000] text-2xl font-bold mb-4 bq2">Idiomas</h2>
+        <ul>
+          <li>Español</li>
+          <li>Inglés</li>
+        </ul>
+      </section>
+    </div>
+  </section>
+  <div class="flex justificy-center mx-auto max-w-max mt-5 ">
+        <a href="/" class="bg-[#D3BB36] text-white px-4 py-2 rounded flex items-center">Volver al Inicio  <Home class="ml-2 "/> </a> 
+  </div>
+</main>
+</Layout>
+
+<style>
+    @media (max-width: 1280px) {
+        .imagepeq {
+           margin-left: auto;
+           margin-right: auto;
+            height: 550px;
+            width: 750px;
+            
+        }
+    }
+
+    @media (max-width: 380px) {
+        .mq1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 280px;
+            
+        }
+    }
+
+     @media (max-width: 383px) {
+        .bq2 {
+            font-size: 1.1rem;
+            
+        }
+    }
+
+
+    
+</style>
