@@ -35,7 +35,9 @@ const MiembrosEquipo = [
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {MiembrosEquipo.map(({ photo, name, role, email, linkedin, page }) => (
         <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm border border-gray-800 w-full ">
+            <a href={page}>
             <img src={photo} alt={`${name}'s photo`} class="w-full h-50 object-cover object-center">
+            </a>
             <div class="p-6 card">
                 <h2 class="text-center text-3xl font-bold mb-2">{name}</h2>
                 <p class="text-center text-2xl text-[#fc2121] font-semibold mb-2">{role}</p>
